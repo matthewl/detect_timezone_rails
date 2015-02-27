@@ -37,7 +37,7 @@
       $.extend( settings, options );
     }
 
-    var tz_info = jstz.determine_timezone();
+    var tz_info = jstz.determine();
     var timezone = tz_info.timezone;
     if (timezone != 'undefined') {
       timezone.ambiguity_check();
